@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>UTS Pemrograman WEB _ Rendy Irawan(192350150)(III-3 Pagi)</title>
+    <!-- CSS -->
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+
+    <!-- Box Icons -->
+    <link rel="stylesheet" href="assets/css/boxicons.min.css" />
+    <link rel="stylesheet" href="assets/css/boxicons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+
+    <!-- Font Google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Akshar&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <!-- Navbar Start -->
+    <header>
+      <a href="index.html" class="logo">
+        <i class="bx bxl-netlify"></i> !Link
+      </a>
+
+      <!-- Navigation -->
+      <ul class="navbar">
+        <li><a href="#home" class="home-active">Home</a></li>
+        <li>
+          <button><a href="#about" id="show-modal1">About</a></button>
+        </li>
+        <li>
+          <button><a href="#contact" id="show-modal2">Contact</a></button>
+        </li>
+      </ul>
+      <!-- About -->
+      <div class="overlay overlay--hidden"></div>
+      <div class="modal modal--hidden">
+        <div class="modal__contents">
+          <div class="modal__close-bar">
+            <span>X</span>
+          </div>
+          
+          </p>
+          <div id="about">
+            <h4>UTS Website Pemrograman Web</h4>
+          <p>
+            Website ini dibuat untuk memenuhi UTS Pemrograman Web (III-3
+            Pagi)<br />Berisikan sebuah Landing Page dan dibuat dengan HTML,
+            CSS, Javascript.</p>
+          </div>
+        </div>
+      </div>
+      <!-- Contact -->
+      <div class="overlay2 overlay--hidden2"></div>
+      <div class="modal2 modal--hidden2">
+        <div class="modal__contents2">
+          <div class="modal__close-bar2">
+            <span>X</span>
+          </div>
+          
+          </p>
+          <div id="contact">
+            <h5>Contact Person</h5>
+          <p>
+            Rendy Irawan(192350150)<br>(III-3 Pagi)<br>snowwotv@gmail.com</p>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Navbar End -->
+
+    <!-- Home Start -->
+    <section class="home swiper" id="home">
+      <div class="title-h">
+        <h1>WELCOME TO MY WORLD</h1>
+      </div>
+      <!-- Cube Start -->
+      <div class="title">
+        <div class="box box1">
+          <img src="assets/img/gif1.gif" alt="image 1" />
+        </div>
+
+        <div class="box box2">
+          <img src="assets/img/gif2.gif" alt="image 2" />
+        </div>
+
+        <div class="box box3">
+          <img src="assets/img/gif3.gif" alt="image 3" />
+        </div>
+
+        <div class="box box4">
+          <img src="assets/img/gif4.gif" alt="image 4" />
+        </div>
+
+        <div class="box box5">
+          <img src="assets/img/gif5.gif" alt="image 5" />
+        </div>
+
+        <div class="box box6">
+          <img src="assets/img/gif6.gif" alt="image 6" />
+        </div>
+      </div>
+      <!-- Cube End -->
+
+      <!-- Snowfall Effect Start -->
+      <div id="snow-fall"></div>
+
+      <!-- Snowfall Effect End -->
+
+      <!-- Music Player Start -->
+      <div class="audio-container" id="audio-container">
+        <div class="audio-info">
+          <h4 id="title">Music Player</h4>
+          <div class="progress-container" id="progress-container">
+            <div class="progress" id="progress"></div>
+          </div>
+        </div>
+        <audio autoplay src="assets/music/land.mp3" id="audio"></audio>
+        <div class="img-container">
+          <img src="assets/cover/land.jpg" alt="music-cover" id="cover" />
+        </div>
+        <div class="navigation">
+          <button id="prev" class="action-btn">
+            <i class="fas fa-backward"></i>
+          </button>
+          <button id="play" class="action-btn action-btn-big">
+            <i class="fas fa-play"></i>
+          </button>
+          <button id="next" class="action-btn">
+            <i class="fas fa-forward"></i>
+          </button>
+        </div>
+      </div>
+
+      <!-- Music Player End -->
+
+      <!-- Swiper Start -->
+
+      <div class="swiper-wrapper">
+        <div class="swiper-slide container">
+          <!-- Home 1 -->
+          <img src="assets/img/img1.jpg" alt="" />
+        </div>
+        <!-- Home 2 -->
+        <div class="swiper-slide container">
+          <img src="assets/img/img2.png" alt="" />
+        </div>
+        <!-- Home 3 -->
+        <div class="swiper-slide container">
+          <img src="assets/img/img3.jpg" alt="" />
+        </div>
+        <!-- Home 4 -->
+        <div class="swiper-slide container">
+          <img src="assets/img/img4.jpg" alt="" />
+        </div>
+        <!-- Home 5 -->
+        <div class="swiper-slide container">
+          <img src="assets/img/img5.png" alt="" />
+        </div>
+        <!-- Home 6 -->
+        <div class="swiper-slide container">
+          <img src="assets/img/img6.png" alt="" />
+        </div>
+        <!-- Home 7 -->
+        <div class="swiper-slide container">
+          <img src="assets/img/img7.png" alt="" />
+        </div>
+        <!-- Home 8 -->
+        <div class="swiper-slide container">
+          <img src="assets/img/img8.png" alt="" />
+        </div>
+        <!--  -->
+      </div>
+      <div class="swiper-pagination"></div>
+
+      <!-- Swiper End -->
+    </section>
+
+    <!-- Home End -->
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <!-- Custom JS -->
+    <script src="assets/js/script.js"></script>
+    <!-- Firefly Effect JS -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ"
+      crossorigin="anonymous"
+    ></script>
+    <script type="text/javascript" src="assets/js/particles.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+  </body>
+</html>

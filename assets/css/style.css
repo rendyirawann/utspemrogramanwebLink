@@ -1,0 +1,438 @@
+@import url("https://fonts.googleapis.com/css2?family=Akshar&display=swap");
+
+body {
+  font-family: "Akshar", sans-serif;
+  overflow: hidden;
+}
+
+* {
+  font-family: "Akshar", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  scroll-padding-top: 2rem;
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+}
+
+/* Root Variabel */
+:root {
+  --main-color: #fff;
+  --bg-color: #000000;
+  --text-color: #000000;
+}
+
+header {
+  position: fixed;
+  width: 100%;
+  top: 50%;
+  right: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 400px;
+  transition: 0.5s;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+
+section {
+  padding: 4.5rem 0 1.5rem;
+}
+
+/* Navbar Start */
+header h4 {
+  display: flex;
+  margin-left: 9em;
+}
+
+.logo {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--text-color);
+  display: flex;
+  align-items: center;
+  column-gap: 0.5rem;
+}
+
+.logo .bx {
+  font-size: 24px;
+  color: var(--text-color);
+}
+
+.navbar {
+  display: flex;
+  column-gap: 5rem;
+  align-items: center;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+}
+
+.navbar li {
+  position: relative;
+}
+
+.navbar a {
+  font-size: 1rem;
+  font-weight: 500;
+  color: var(--text-color);
+}
+
+.navbar a::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: var(--text-color);
+  position: absolute;
+  bottom: -4px;
+  left: 0;
+  transition: 0.4s all linear;
+}
+
+.navbar a:hover::after,
+.navbar .home-active::after {
+  width: 100%;
+}
+
+#menu {
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 1000000;
+  display: none;
+}
+
+.navbar button {
+  background-color: transparent;
+  border-style: none;
+}
+
+.overlay {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: flex;
+  margin-left: -25em;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+.overlay--hidden {
+  display: none;
+}
+
+.modal {
+  position: fixed;
+  top: 45%;
+  left: 1%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.modal--hidden {
+  display: none;
+}
+.modal__contents {
+  background-color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 1em;
+}
+.modal__close-bar {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -2rem;
+  margin-top: -1rem;
+}
+
+.overlay2 {
+  background-color: rgba(0, 0, 0, 0.8);
+  position: fixed;
+  display: flex;
+  margin-left: -25em;
+  width: 100%;
+  height: 100%;
+  border-radius: 1em;
+}
+.overlay--hidden2 {
+  display: none;
+}
+
+.modal2 {
+  position: fixed;
+  top: 45%;
+  left: 1%;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease;
+}
+.modal--hidden2 {
+  display: none;
+}
+.modal__contents2 {
+  background-color: #fff;
+  padding: 2rem 4rem;
+  border-radius: 1em;
+}
+.modal__close-bar2 {
+  cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  margin-right: -2rem;
+  margin-top: -1rem;
+}
+
+/* Navbar End */
+
+/* Home Start */
+.title-h {
+  position: fixed;
+  width: 24%;
+  top: 10%;
+  left: 43%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+/* Cube Start */
+.title {
+  position: fixed;
+  top: 17%;
+  left: 47%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  width: 100px;
+  height: 100px;
+  transform-style: preserve-3d;
+  animation: rotate 10s linear infinite;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.box {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.9;
+  display: flex;
+  top: 80%;
+}
+
+/* Applying styles to each face */
+.box1 {
+  transform: translateZ(50px);
+}
+
+.box2 {
+  transform: rotateY(90deg) translateX(50px);
+  transform-origin: right;
+}
+
+.box3 {
+  transform: rotateY(180deg) translateZ(50px);
+}
+
+.box4 {
+  transform: rotateY(-90deg) translateX(-50px);
+  transform-origin: left;
+}
+
+.box5 {
+  transform: rotateX(-90deg) translateY(-50px);
+  transform-origin: top;
+}
+
+.box6 {
+  transform: rotateX(90deg) translateY(50px);
+  transform-origin: bottom;
+}
+
+/* Animating the elements */
+@keyframes rotate {
+  0%,
+  100% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotateY(90deg) rotateZ(90deg);
+  }
+  30% {
+    transform: rotateY(180deg) rotateZ(-90deg);
+  }
+  50% {
+    transform: rotateY(270deg) rotateZ(90deg);
+  }
+  70% {
+    transform: rotateY(360deg) rotateZ(-90deg);
+  }
+}
+
+/* Cube End */
+
+/* Swiper Start */
+.container {
+  width: 100%;
+  min-height: 640px;
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: rgb(3, 2, 7, 0.9);
+}
+
+.container img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  z-index: -1;
+  opacity: 0.2;
+}
+
+/* Swiper End */
+
+/* Music Player Start */
+.audio-container {
+  background-color: #000;
+  border-radius: 15px;
+  box-shadow: 0 20px 20px 0 rgb(247, 148, 1);
+  padding: 20px 30px;
+  z-index: 10;
+  position: fixed;
+  width: 24%;
+  top: 80%;
+  left: 39%;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+}
+
+.img-container {
+  position: relative;
+  width: 110px;
+}
+
+.img-container img {
+  border-radius: 50%;
+  object-fit: cover;
+  height: 110px;
+  width: inherit;
+  position: fixed;
+  top: 64%;
+  left: 40%;
+  animation: rotate 3s linear infinite;
+  animation-play-state: paused;
+}
+
+.audio-container.play .img-container img {
+  animation-play-state: running;
+}
+
+@keyframes rotates {
+  from {
+    transform: rotates(0deg);
+  }
+
+  to {
+    transform: rotates(360deg);
+  }
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+
+.action-btn {
+  background-color: #000;
+  border: 0;
+  color: #f7be04;
+  font-size: 20px;
+  cursor: pointer;
+  padding: 10px;
+  margin: 0 20px;
+}
+
+.action-btn.action-btn-big {
+  color: #fcb51b;
+  font-size: 30px;
+}
+
+.action-btn:focus {
+  outline: 0;
+}
+
+.audio-info {
+  background-color: rgb(255, 166, 0);
+  border-radius: 15px 15px 0 0;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  width: calc(100% - 40px);
+  padding: 10px 10px 10px 150px;
+  opacity: 0;
+  transform: translateY(0%);
+  transition: transform 0.3s ease-in, opacity 0.3s ease-in;
+  z-index: 0;
+}
+
+.audio-container.play .audio-info {
+  opacity: 1;
+  transform: translateY(-100%);
+}
+
+.audio-info h4 {
+  margin: 0;
+}
+
+.progress-container {
+  background: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  height: 4px;
+  width: 100%;
+}
+
+.progress {
+  background-color: #000;
+  border-radius: 5px;
+  height: 100%;
+  width: 50%;
+  transition: width 0.1s linear;
+}
+/* Music Player End */
+
+/* Snowfall Start */
+#snow-fall {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: flex;
+  align-items: center;
+  width: 200vh;
+  height: 200vh;
+}
+
+/* Snowfall End */
+
+/* Home End */
